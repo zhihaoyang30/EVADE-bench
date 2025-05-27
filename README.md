@@ -1,5 +1,6 @@
-Homepage: 
-https://zhihaoyang30.github.io/EVADE-bench/
+Title:EVADE: Multimodal Benchmark for Evasive Content Detection in E-Commerce Applications
+
+Homepage:https://zhihaoyang30.github.io/EVADE-bench/
 
 cite:
 ```
