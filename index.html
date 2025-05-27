@@ -250,24 +250,66 @@
     </div>
   </section>
 
+  <!-- 引入 Swiper 样式 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <section class="section">
     <div class="container">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Bad Case</h2>
-          
-          <div class="content has-text-centered" style="display: flex; justify-content: center; gap: 20px;">
-            <img src="./static/images/bad_case-1.jpg" width="45%">
-            <img src="./static/images/bad_case-2.jpg" width="45%">
-          </div>
-          <div class="content has-text-centered">
-            <p><strong>Figure 3.</strong> Bad cases from All-in-One task.</p>
-          </div>                 
 
+          <!-- Swiper -->
+          <div class="swiper mySwiper" style="padding-bottom: 40px;">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide" style="display: flex; justify-content: center; gap: 20px;">
+                <img src="./static/images/bad_case-1.jpg" width="45%">
+                <img src="./static/images/bad_case-2.jpg" width="45%">
+              </div>
+              <!-- Slide 2 -->
+              <div class="swiper-slide" style="display: flex; justify-content: center; gap: 20px;">
+                <img src="./static/images/bad_case-3.jpg" width="45%">
+                <img src="./static/images/bad_case-4.jpg" width="45%">
+              </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="content has-text-centered">
+            <p><strong>Figure 3. </strong>Bad cases from All-in-One task.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- 引入 Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- 初始化 Swiper -->
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true, // ✅ 开启循环
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  
+
 
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
@@ -288,29 +330,12 @@
 
 <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            Based on the following <a
+              href="https://github.com/nerfies/nerfies.github.io">template</a>.
           </p>
         </div>
       </div>
