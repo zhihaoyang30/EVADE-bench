@@ -1,14 +1,13 @@
-# Nerfies
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
-
-If you find Nerfies useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@misc{xu2025evademultimodalbenchmarkevasive,
+      title={EVADE: Multimodal Benchmark for Evasive Content Detection in E-Commerce Applications}, 
+      author={Ancheng Xu and Zhihao Yang and Jingpeng Li and Guanghu Yuan and Longze Chen and Liang Yan and Jiehui Zhou and Zhen Qin and Hengyun Chang and Hamid Alinejad-Rokny and Bo Zheng and Min Yang},
+      year={2025},
+      eprint={2505.17654},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.17654}, 
 }
 ```
 
